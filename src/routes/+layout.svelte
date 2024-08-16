@@ -20,7 +20,7 @@
 </script>
 
 <header>
-	<h1>Breathe</h1>
+	<h1>BreatheBox</h1>
 	<TimeClock />
 </header>
 
@@ -83,8 +83,6 @@
 		</li>
 		<li><a href="https://syntax.fm">Syntax Podcast</a></li>
 	</ul>
-
-	<p>© Til' Infinity Scott Tolinski</p>
 </footer>
 
 <style>

@@ -14,7 +14,7 @@
 	let counter = 0; // Initialize the counter
 	let threshold = 30; // Set your threshold value here
 	let is_counting = false; // Toggle to control counting
-	let instructions = "Press start when you are ready to begin. You'll do great!";
+	let instructions = "Take a deep breath and find you calm. Press start when you are ready to begin!";
 
 	const MAX_AMPLITUDE = 255; // Adjust this based on the maximum amplitude you're receiving
 	const LOG_BASE = 10; // Adjust this for the desired logarithmic scaling
@@ -63,7 +63,7 @@
 			if (context) {
 				analyser.getByteFrequencyData(dataArray);
 				context.clearRect(0, 0, canvas.width, canvas.height);
-				let sum = dataArray.reduce((acc, val) => acc + val, 0);
+				let sum = dataArray.reduce((acc: any, val: any) => acc + val, 0);
 				let average = sum / bufferLength;
 
 				const scaledAverage = (logScale(average) / logScale(MAX_AMPLITUDE)) * canvas.width; // Draw the animation based on the average volume
@@ -139,8 +139,7 @@
 		<canvas width="300" height="20" bind:this={canvas} class="meter" />
 		<input type="range" name="threshold" id="threshold" bind:value={threshold} min={0} max={200} />
 		<p class="note">
-			Adjust the threshold to your mic level. Drag the slider to a level you can maintain while
-			inhaling or exhaling.
+			Adjust the threshold to your mic level. Move the slider to a level you can maintain while inhaling.
 		</p>
 	</div>
 {:catch}

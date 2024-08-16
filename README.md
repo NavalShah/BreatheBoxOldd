@@ -1,12 +1,4 @@
-# Breathe
-
-![Breathe Logo](/breath.png)
-
-https://breathe.tolin.ski/
-
-An app I made as a fun project (JFF (just for fun) and JFJL (more on that soon. 🤫)).
-
-...anyways. It's an app to track box breathing sessions using your microphone to see if you are inhaling, exhaling long enough.
+# BreatheBox
 
 ### Helpful Links
 
@@ -15,5 +7,3 @@ An app I made as a fun project (JFF (just for fun) and JFJL (more on that soon. 
 - [Syntax Podcast](https://syntax.fm)
 
 ---
-
-© Til' Infinity Scott Tolinski
