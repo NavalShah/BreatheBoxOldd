@@ -4,7 +4,7 @@
 	$: total_rounds = $rounds[1];
 </script>
 
-<h2>Rounds</h2>
+<h2>Rounds?</h2>
 <div class="rounds">
 	{#each Array(total_rounds) as _, index (index)}
 		<input

@@ -1,5 +1,4 @@
-<script lang="ts">
-	// Thank you https://github.com/ErickRuano/clerk-svelte
+<!-- <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
 	import { clerk } from './clerk';
 
@@ -18,4 +17,4 @@
 	onDestroy(unsubscribe);
 </script>
 
-<div bind:this={signInElement} />
+<div bind:this={signInElement} /> -->

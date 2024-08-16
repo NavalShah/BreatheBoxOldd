@@ -14,16 +14,16 @@ export const status = writable<
 >('INITIAL');
 
 function get_next_state(
-	currentStatus: 'INHALE' | 'HOLD' | 'EXHALE' | 'WAIT' | null
-): 'INHALE' | 'HOLD' | 'EXHALE' | 'WAIT' | null {
+	currentStatus: 'INHALE' | 'HOLD' | 'EXHALE' | 'REST' | null
+): 'INHALE' | 'HOLD' | 'EXHALE' | 'REST' | null {
 	switch (currentStatus) {
 		case 'INHALE':
 			return 'HOLD';
 		case 'HOLD':
 			return 'EXHALE';
 		case 'EXHALE':
-			return 'WAIT';
-		case 'WAIT': {
+			return 'REST';
+		case 'REST': {
 			rounds.count_round();
 			const completed_rounds = get(rounds)[0];
 			const total_rounds = get(rounds)[1];

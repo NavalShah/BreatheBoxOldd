@@ -1,1 +1,1 @@
-<h2>I'm so proud of you</h2>
+<h2>I'm so proud, keep going!</h2>
