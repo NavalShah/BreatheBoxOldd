@@ -1,28 +1,15 @@
 <script lang="ts">
 	import TimeClock from '$lib/TimeClock.svelte';
-	// import Clerk from '@clerk/clerk-js';
 	import '$lib/styles.css';
-	// import { onMount } from 'svelte';
-	// import Signin from '$lib/Signin.svelte';
-	// import Signup from '$lib/Signup.svelte';
-	// import { clerk as clerk_store } from '$lib/clerk';
-	// let signin = false;
-	// let signup = false;
-	// let anon = false;
 
-	// onMount(async () => {
-	// 	// Don't worry, this key is publishable, I mean it says so right in the name. 😅
-	// 	const clerkFrontendApi = 'pk_test_cGxlYXNlZC1vc3RyaWNoLTQ5LmNsZXJrLmFjY291bnRzLmRldiQ';
-	// 	const clerk = new Clerk(clerkFrontendApi);
-	// 	await clerk.load();
-	// 	$clerk_store = clerk;
-	// });
 </script>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none; color: inherit;">
+	<header>
+		<h1>BreatheBox</h1>
+		<TimeClock />
+	</header>
+</a>
 
-<header>
-	<h1>BreatheBox</h1>
-	<TimeClock />
-</header>
 
 <main class="container" style="display: grid;">
 	<!-- {#if $clerk_store?.user || anon} -->
@@ -77,11 +64,11 @@
 			>
 		</li>
 		<li>
-			<a href="https://syntax.fm/show/670/anxiety-and-uncertainty-with-dr-courtney-tolinski"
-				>Anxiety and Uncertainty with Dr. Courtney Tolinski on Syntax.fm</a
+			<a href="https://www.webmd.com/balance/what-is-box-breathing"
+				>How Box Breathing Helps</a
 			>
 		</li>
-		<li><a href="https://syntax.fm">Syntax Podcast</a></li>
+		<li><a href="https://www.instagram.com/naval_shah_29/">Secret Link</a></li>
 	</ul>
 </footer>
 
