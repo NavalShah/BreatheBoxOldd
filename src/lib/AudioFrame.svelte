@@ -135,7 +135,7 @@
 </script>
 
 {#await stream_promise then stream}
-	<div transition:slide|global>
+	<div transition:slide>
 		<canvas width="300" height="20" bind:this={canvas} class="meter" />
 		<input type="range" name="threshold" id="threshold" bind:value={threshold} min={0} max={200} />
 		<p class="note">
